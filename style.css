@@ -1,0 +1,768 @@
+/* Warna tema */
+:root {
+    --biru-tua: #0a192f00;
+    --biru-muda: #64ffda;
+    --putih: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--biru-tua);
+    color: var(--putih);
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: var(--putih);
+    color: var(--biru-tua);
+    padding: 10rem;
+    text-align: center;
+}
+
+.about, .portfolio {
+    padding: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.projects {
+    display: flex;
+    flex-wrap: flex;
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: var(--putih);
+    color: var(--biru-tua);
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 10%);
+}
+
+footer {
+    background-color: #051221;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+:root {
+    --biru-tua: #0a192f;
+    --biru-muda: #64ffda;
+    --putih: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--biru-tua);
+    color: var(--putih);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--biru-muda);
+    color: var(--biru-tua);
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio {
+  text-align: center;
+    padding: 2rem;
+}
+
+
+.simbol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.simbol img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.simbol img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #051221;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+h4 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+h5 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+
+}
+
+.deskripsi {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h6 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f;
+}
+
+/* Container utama slider */
+.slider-container {
+    position: relative;
+    width: 100%;              /* Ubah dari 0px */
+    max-width: 600px;         /* Ubah sesuai kebutuhan */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Slides wrapper */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Setiap slide */
+.slide {
+    flex: 0 0 100%;
+    position: relative;
+    padding-top: 100%; /* 1:1 aspect ratio */
+    display: none;     /* Default disembunyikan */
+}
+
+/* Slide aktif ditampilkan */
+.show-slide {
+    display: block;
+}
+
+/* Gambar dalam slide */
+.slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tombol navigasi */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.show-slide {
+    display: block;
+  }
+  
+
+  .kritik-saran {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #0a192f;
+  }
+  
+  .kritik-saran form {
+    background: linear-gradient(145deg, #1b56fd, #0a192f);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  .kritik-saran h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  
+  .kritik-saran input,
+  .kritik-saran textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    background: #fff;
+    color: #000;
+  }
+  
+  .kritik-saran textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .kritik-saran button {
+    width: 100%;
+    padding: 12px;
+    background: #64ffda;
+    color: #0a192f;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .kritik-saran button:hover {
+    background: #0a192f;
+    color: #64ffda;
+    border: 1px solid #64ffda;
+  }
+  
+  #pesanSukses {
+    display: none;
+    margin-top: 15px;
+    color: #64ffda;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .judul-kritik {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .feedback-box {
+    background: #0a192f;
+    color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .judul-kritik {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #64ffda;
+  }
+  
+  .form-wrap input,
+  .form-wrap textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-wrap textarea {
+    resize: vertical;
+  }
+  
+  .form-wrap button {
+    padding: 10px 20px;
+    background-color: #64ffda;
+    color: #0a192f;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form-wrap button:hover {
+    background-color: #ffffff;
+    color: #0a192f;
+    border: 1px solid #64ffda;
+  }
+  
+  .success-message {
+    display: none;
+    color: #64ffda;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .judul-kritik {
+    font-size: 20px; /* Lebih kecil dari h2 */
+    margin-bottom: 15px;
+    color: #64ffda;
+  }
+
+  .feedback-section {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #1b56fd, #0a192f);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+  }
+  
+  .feedback-section h3 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .feedback-form button {
+    padding: 10px 25px;
+    background: #ffffff;
+    color: #1b56fd;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #1b56fd;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .success-message {
+    display: none;
+    margin-top: 15px;
+    color: #64ffda;
+    font-weight: bold;
+  }
+  
+  h3 {
+    display: block;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .kotak-kritik {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, #1b56fd, #0a192f);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .kotak-kritik h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #64ffda;
+  }
+  
+  .kotak-kritik input,
+  .kotak-kritik textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .kotak-kritik textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .kotak-kritik button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #1b56fd;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .kotak-kritik button:hover {
+    background-color: #1b56fd;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  .pesan-sukses {
+    display: none;
+    margin-top: 15px;
+    color: #64ffda;
+    font-weight: bold;
+  }
+  .judul-kritik {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .heading-saran {
+    font-size: 30px;
+    font-weight: bold;
+    color: #64ffda;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Menggunakan variabel untuk warna */
+:root {
+    --biru-tua: #0a192f;
+    --biru-muda: #64ffda;
+    --putih: #ffffff;
+    --abu-abu: #f4f4f4;
+}
+
+/* Reset dan styling dasar body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--biru-tua);
+    color: var(--putih);
+}
+
+/* Bagian Form Kritik dan Saran */
+.feedback-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: var(--abu-abu);
+    border-radius: 10px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.feedback-section h3 {
+    font-size: 28px;
+    color: var(--biru-tua);
+    margin-bottom: 20px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: var(--biru-muda);
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--biru-muda);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feedback-form button:hover {
+    background-color: #1b56fd;
+}
+
+/* Pesan sukses setelah pengiriman */
+.success-message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--biru-muda);
+    display: none;
+}
+
+/* Menggunakan variabel untuk warna */
+:root {
+    --biru-tua: #0a192f;
+    --biru-muda: #64ffda;
+    --putih: #ffffff;
+    --abu-abu: #f4f4f4;
+}
+
+/* Reset dan styling dasar body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--biru-tua);
+    color: var(--putih);
+}
+
+/* Bagian Form Kritik dan Saran */
+.feedback-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: var(--abu-abu);
+    border-radius: 10px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran */
+}
+
+.feedback-section h3 {
+    font-size: 28px;
+    color: var(--biru-tua);
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px; /* Jarak antar elemen form */
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%; /* Full width */
+    padding: 15px;
+    margin: 0; /* Hilangkan margin default */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran */
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: var(--biru-muda);
+}
+
+.feedback-form button {
+    width: 100%; /* Full width */
+    padding: 15px;
+    background-color: var(--biru-muda);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px; /* Memberikan sedikit jarak atas */
+    box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran */
+}
+
+.feedback-form button:hover {
+    background-color: #1b56fd;
+}
+
+/* Pesan sukses setelah pengiriman */
+.success-message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--biru-muda);
+    display: none;
+}
+
+/* Menggunakan variabel untuk warna */
+:root {
+    --biru-tua: #0a192f;
+    --biru-muda: #64ffda;
+    --putih: #ffffff;
+    --abu-abu: #f4f4f4;
+}
+
+/* Reset dan styling dasar body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--biru-tua);
+    color: var(--putih);
+}
+
+/* Bagian Form Kritik dan Saran */
+.feedback-section {
+    width: 100%;
+    max-width: 500px; /* Ukuran maksimal form */
+    margin: 60px auto;
+    padding: 30px;
+    background-color: var(--abu-abu);
+    border-radius: 10px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran */
+}
+
+.feedback-section h3 {
+    font-size: 28px;
+    color: var(--biru-tua);
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px; /* Jarak antar elemen form */
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%; /* Full width */
+    padding: 15px;
+    margin: 0; /* Hilangkan margin default */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran */
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: var(--biru-muda);
+}
+
+.feedback-form button {
+    width: 100%; /* Full width */
+    padding: 15px;
+    background-color: var(--biru-muda);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px; /* Memberikan sedikit jarak atas */
+    box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran */
+}
+
+.feedback-form button:hover {
+    background-color: #1b56fd;
+}
+
+/* Pesan sukses setelah pengiriman */
+.success-message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--biru-muda);
+    display: none;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+@media (max-width: 768%) {
+  /* Gaya khusus untuk perangkat dengan lebar maksimum 768px */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
